@@ -1,0 +1,51 @@
+/* General */
+.btn2, .btn3 {font-size: 1.2rem;}
+.info-section, .training-section { height: 65vh; margin: 0;}
+img { 
+    width: auto; 
+    height: auto;
+    max-width: 100%;
+}
+
+/* Title and Background-----------------------------------------------------------> */
+header { 
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://img3.goodfon.com/wallpaper/nbig/b/ca/rabota-stol-delat-apple.jpg') no-repeat center -7rem/cover fixed; 
+    height: 35vh;
+    position: sticky;
+}
+
+.title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+}
+
+.title-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+}
+
+/* Blog Post One & Three-----------------------------------------------------> */
+
+#intro:nth-of-type(1) { border-top: 3px solid var(--primary-color);}
+#intro:nth-of-type(3) { border-bottom: 3px solid var(--primary-color);}
+.info-section h1 { font-size: 2.1rem; }
+.info-section .info-content a  { font-size: 1.2rem; }
+
+/* Blog Post Two--------------------------------------------------------------> */
+
+#training { 
+    background: var(--light-color); 
+    color: black;
+}
+
+.training-section h1 {font-size: 2.1rem;}
+.training-section .training-content {
+    background: #0173a017;
+}
+
+.training-section .training-content a  { font-size: 1.2rem; }

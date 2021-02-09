@@ -1,0 +1,200 @@
+body {
+	background: no-repeat url(http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg);
+	background-size: cover;
+}
+
+h1 {
+	border: 10px solid #004d66;
+	background-color: #002933;
+	padding: 7px;
+	margin: 0 auto;
+	width: 30%;
+	text-transform: uppercase;
+	text-align: center;
+	word-wrap: break-word;
+	letter-spacing: 0.6rem;
+	font-family: Source Sans Pro;
+	font-size: 80px;
+	color: #ccffff;
+}
+
+.head {
+	padding: 50px;
+}
+
+table, th, td {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+
+th {
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	font-family: Source Sans Pro;
+	font-size: 23px;
+	color: #ccffff;
+}
+
+.one {
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.two {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.three {
+	width: 22%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image {
+	width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border: 4px solid #ccffff;
+	border-radius: 50%;
+	background-color: #004d66;
+}
+
+.div1  {
+	padding: 50px;
+}
+
+.follow {
+	width: 30%;
+	text-transform: uppercase;
+	text-align: center;
+	word-wrap: break-word;
+	font-family: Source Sans Pro;
+	font-size: 15px;
+	color: #ccffff;
+	background-color: #002933;
+	margin: 0 auto;
+	padding: 2px;
+	border: 10px solid #004d66;
+	letter-spacing: 0.6rem;
+}
+
+
+.intro {
+	font-family: Source Sans Pro;
+	font-size: 25px;
+	line-height: 40px;
+	color: #00b8e6;
+	background-color: #004d66;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 40px;
+	border: 7px inset #ccffff;
+	letter-spacing: 0.08rem;
+}
+
+a {
+	color: #ccffcc;
+}
+
+h3 {
+	font-family: Source Sans Pro;
+	font-size: 35px;
+	color: #ccffff;
+	font-weight: bold;
+}
+
+.join1 {
+	padding: 40px;
+}
+
+.join {
+	border: 10px solid #004d66;
+	background-color: #002933;
+	margin: 0 auto;
+	width: 40%;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.05rem;
+	font-family: Source Sans Pro;
+	font-size: 25px;
+	color: #ccffff;
+	padding-right: 45px;
+	padding-left: 45px;
+	padding-bottom: 45px;
+}
+
+.signup {
+	font-family: Source Sans Pro;
+	font-size: 35px;
+	color: #ccffff;
+	font-weight: bold;
+}
+
+.check {
+	width: 30%;
+	text-transform: uppercase;
+	text-align: center;
+	word-wrap: break-word;
+	font-family: Source Sans Pro;
+	color: #ccffff;
+	background-color: #004d66;
+	margin: 0 auto;
+	border: 7px inset #ccffff;
+	letter-spacing: 0.6rem;
+}
+
+.outside {
+	padding: 45px;
+}
+
+.body {
+	font-family: Source Sans Pro;
+	font-size: 25px;
+	color: #00b8e6;
+	background-color: #004d66;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 40px;
+	border: 7px inset #ccffff;
+	letter-spacing: 0.08rem;
+}
+
+.date {
+	color: #ccffff;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+.bloghead {
+	letter-spacing: 0.5rem;
+	font-family: Source Sans Pro;
+	font-size: 37px;
+	color: #ccffff;
+}
+
+.quote {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 15px;
+}
+
+hr {
+	border: 5px solid #ccffff;
+	height: 1px
+	color: gray
+}
+
+.separate {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
