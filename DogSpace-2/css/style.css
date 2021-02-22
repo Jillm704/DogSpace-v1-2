@@ -1,0 +1,530 @@
+:root {
+    --primary-color: #afefff;
+    --secondary-color: #0173a0;
+    --light-color: #f4f4f4;
+    --dark-color: #2b2b2b;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utility Classes ---------------------------------------------------->*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    background: #fff;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+i { color: var(--primary-color); }
+
+ul { list-style: none; }
+
+h1 {font-weight: 400;}
+
+img { 
+    width: 100%; 
+    height: 100%;
+    max-width: 700px;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 4rem;
+    background: #00e1ff;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Button 2 styling-------> */
+.btn2:link,
+.btn2:visited {
+    padding: 0.5rem;
+	border-radius: 2rem;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    background-color: transparent;
+	border: 1px solid var(--primary-color);
+}
+
+.btn2:hover,
+.btn2:active {
+    background-color: #afefff6c;
+    border: 1px solid transparent;
+}
+
+.personal-info a.btn3:link,
+.personal-info a.btn3:visited { 
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+}
+
+/* Button 3 styling-------> */
+.btn3:link,
+.btn3:visited,
+input[type=submit] {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+}
+
+.btn3:hover,
+.btn3:active,
+input[type=submit]:hover,
+input[type=submit]:active { background-color: #014d6b; }
+
+/* Nav Bar ----------------------------------------------------------------->*/
+ #main-nav {
+    background: rgba(0, 0, 0, 0.548);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+}
+/* Nav Bar Logo + Icon ------------>*/
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    display: inline;
+}
+
+.logo i {
+    letter-spacing: 0;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 0.4rem 0.4rem 0.35rem 0.35rem;
+}
+
+/* Nav Bar Social Icons------------->*/
+.social a { margin-right: 0.7rem; }
+.social a:last-child { margin-right: 0;}
+
+.social i {
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 3px;
+}
+
+ .social i:hover { transition: all 0.4s; }
+ .social i.fab.fa-facebook:hover { color: #3b5998; }
+ .social i.fab.fa-twitter:hover { color: #00aced; }
+ .social i.fab.fa-instagram:hover { color: #3f729b; }
+ .social i.fab.fa-youtube:hover { color: #ff0000; }
+
+/* Nav Bar li's (Menu Options)--------> */
+.menu ul { display: flex; }
+.menu ul li a { 
+    margin: 0 0.6rem; 
+    padding-bottom: 0.5rem;
+}
+
+.menu ul li a:link,
+.menu ul li a:visited {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(141, 227, 253, 0.397);
+}
+
+.menu ul li a.current {
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(141, 227, 253, 0.397);
+}
+
+/* Header & Profile Info ----------------------------------------------------> */
+header { 
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.askideas.com/media/79/Australian-Shephered-Dogs-Playing.jpg') no-repeat center -7rem/cover fixed; 
+    height: 69vh;
+}
+
+#showcase:before {
+    content: '';
+    position: absolute;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#showcase .showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr;
+    align-items: center;
+    width: var(--max-width);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+/* Showcase Contents Styling----------> */
+.showcase-content .profile img { border-radius: 50%; }
+.showcase-content .profile {
+    border-right: 3px solid var(--secondary-color);
+    padding: 0.7rem 1.5rem 0.6rem 0;
+}
+
+.personal-info { padding-left: 1.5rem; }
+.personal-info h1 { margin: 0.9rem 0;}
+.personal-info h1:last-of-type { margin-bottom: 1.8rem;}
+.personal-info i.fas.fa-paw { padding-right: 0.7rem; }
+.personal-info i.fas.fa-bone { padding-right: 0.4rem; }
+.personal-info i.fas.fa-dog { padding-right: 0.5rem; }
+
+/* About Me Section Styling------------> */
+.about-me {
+    padding: 0.6rem 1.4rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.about-me h1 { margin-bottom: 1rem; }
+
+/* "What I Do" Info ----------------------------------------------------> */
+#intro { background: #002e41; }
+#intro .container { max-width: 1900px; }
+
+.info-section {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.info-section img { border-radius: 1rem; }
+.info-section h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.info-section p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-section .info-content {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+
+.info-section .info-content a  { font-size: 1.5rem; }
+.info-section .info-content a i {
+    padding: 0 0.3rem;
+    margin: 1rem 0;
+}
+
+/* "Awards" section --------------------------------------------------> */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: black;
+    background: var(--light-color);
+    line-height: 2;
+}
+
+.stats i {
+    color: var(--secondary-color);
+    transition: all 0.2s;
+}
+
+.stats i:hover { 
+    transform: scale(1.15);
+    color: #e7c21a;
+}
+
+.stats div { padding: 2rem;}
+.stats div:nth-of-type(even) { background: #dfdfdf;}
+.stats-title { font-size: 1.5rem; }
+.stats-number { font-size: 2.3rem; }
+
+/* "photo gallery" -------------------------------------------------------> */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 16rem;
+}
+
+.gallery div {overflow: hidden;}
+.gallery img { transition: 0.5s all;}
+.gallery img:hover { transform: scale(1.10); }
+
+/* "Where I train" Info ----------------------------------------------------> */
+#training { background: #002e41; }
+#training .container { max-width: 1900px; }
+
+.training-section {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.training-section img { border-radius: 1rem;}
+.training-section h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.training-section p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.training-section .training-content {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+
+.training-section .training-content a  { font-size: 1.5rem; }
+.training-section .training-content a i {
+    padding: 0 0.3rem;
+    margin: 1rem 0;
+}
+
+/* My Team Section --------------------------------------------------------> */
+#team { color: black;}
+#team .container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.team-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#team .members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+}
+
+#team .members ul li img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#team .members ul .member-name {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#team .members p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.7rem;
+    background: #fff;
+}
+
+ /* Blog Sample ----------------------------------------------------------> */
+#sample { 
+    background: var(--light-color); 
+    color: black;
+    padding: 3rem;
+}
+
+#sample .container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+}
+
+.sample-title {
+    font-size: 2.5rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.sample-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sample-section {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.sample-section img { border-radius: 1rem;}
+.sample-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--secondary-color);
+}
+
+.text-2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.sample-section p {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sample-section .sample-content {
+    background: #0173a017;
+    padding: 1.5rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+
+.sample-section .sample-content a  { font-size: 1.2rem; }
+.sample-section .sample-content a i {
+    padding: 0 0.3rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+/* Sign Up ------------------------------------------------------------> */
+#signup { 
+    background: #002e41;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 3rem;
+}
+
+#signup .container {
+    max-width: 800px;
+    padding: 0 1.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.signup-title {
+    font-size: 2.5rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.signup-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.text-fields { display: flex; }
+.labels {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: left;
+}
+
+.labels label {
+    margin: 0.5rem;
+    padding: 0.3rem;
+}
+
+::placeholder { color: rgba(204, 204, 204, 0.582); }
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input {
+    color: white;
+    background: transparent;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--secondary-color);
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus {outline: none;}
+select, select option {
+    color: white;
+    background: #002e41;
+}
+
+.submit {margin-top: 2rem;}
+input[type=submit]:focus {outline: none;}
+
+input[type=submit] { 
+    color: white;
+    font-size: 1rem;
+    letter-spacing: inherit;
+    width: 10rem;
+}
+
+/* Footer -------------------------------------------------------------> */
+#footer { background: var(--dark-color);}
+.footer {
+    color: var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer h1 { font-size: 0.8rem; }
+.footer-social i {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.footer-social a { margin-right: 0.7rem; }
+.footer-social a:last-child { margin-right: 0;}
+ .footer-social i { transition: color 0.4s; }
+ .footer-social i:hover { color: var(--primary-color);}
